@@ -81,4 +81,4 @@ os botões que precisamos nesse formulário são:
 ### Algumas observações:
 
     1. Armazene seus arquivos .json dentro da pasta JSON criado dentro do projeto.
-    2. A versão do Angular instalado é: 6.0.2
+    2. A versão do Angular instalado é: 7.0
