@@ -1,0 +1,16 @@
+.form-group {
+    padding-bottom : 20px;
+    &.isinvalid {
+        label {
+          color: indianred;
+        }
+        input, select {
+          border-color: indianred;
+        }
+    }
+      
+    .invalidfeedback {
+        height: 0px;
+        color: indianred;
+    }
+}

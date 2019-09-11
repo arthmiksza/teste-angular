@@ -1,0 +1,68 @@
+$headersize: 70px;
+$footersize: 100px;
+$gray1: #e3e3e3;
+$gray2: #a3a3a3;
+
+
+header {
+    height: $headersize;
+    background-color: $gray1;
+    text-align: center;
+    h4 {
+        line-height: $headersize;
+        margin: 0;
+    }
+    div {
+        line-height: $headersize;
+    }
+    .buttonback {
+        z-index: 999;
+        position: absolute;
+    }
+}
+body {
+    padding: $headersize 0px $footersize;
+}
+footer {
+    height: $footersize;
+    background-color: $gray2;
+    bottom: 0px;
+}
+header, footer {
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+}
+.toast {
+    position: fixed;
+    top: -80px;
+    left: 0;
+    right: 0;
+    z-index: 0;
+    margin: auto;
+    width: 400px;
+    @media(max-width: 728px) {
+        width: 300px;
+    }
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    opacity: 0.9;
+    background-color: rgb(0,0,0);
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    transition: .2s all ease;
+    &.visible {
+        top: 80px;
+        opacity: 0.9;
+        z-index: 10000;
+    }
+    &.success {
+        background-color: darkgreen;
+        color: #FFF;
+    }
+    &.error {
+        background-color: indianred;
+        color: #FFF;
+    }
+}

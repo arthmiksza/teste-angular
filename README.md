@@ -82,3 +82,27 @@ os botões que precisamos nesse formulário são:
 
     1. Armazene seus arquivos .json dentro da pasta JSON criado dentro do projeto.
     2. A versão do Angular instalado é: 7.0
+
+## Instruções para rodar o teste
+
+# SQL SERVER
+
+O script para criar o banco, criar tabela, popular tabela e criar procs está dentro da pasta "sqlserver/", dentro desse script contém instruções de como executa-lo.
+
+# API
+
+Está dentro da pasta "server/", instruções para rodar a api:
+
+	1. Na pasta "api/services/database.ts", alterar a variável "config" para que a mesma tenha as informações do SqlServer onde o script do banco foi executado (user, password, server, port e instancename).
+	2. Abrir o terminal dentro da pasta.
+	3. Rodar o comando "npm i" para instalar os node_moules.
+	4. Rodar o comando "npm run start" para inicializar a api.
+	
+# FRONT END
+
+Está dentro da pasta "aplicacao-theos", instruções para rodar o frontend:
+
+	1. Concluir as etapas do "SQL Server" e da "API".
+	2. Abrir o terminal dentro da pasta.
+	3. Rodar o comando "npm i" para instalar os node_moules.
+	4. Rodar o comando "ng serve --aot" para inicializar o frontend.

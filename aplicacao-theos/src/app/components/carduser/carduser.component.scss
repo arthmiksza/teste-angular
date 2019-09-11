@@ -1,0 +1,50 @@
+.carduser {
+    background-color: bisque;
+    border: 1px solid burlywood;
+    height: 240px;
+    cursor: pointer;
+    &:hover {
+        opacity: 0.8
+    }
+    p {
+        margin: 0.3rem 0px;
+        opacity: 0.9;
+    }
+    .name, p {
+        
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    &.newuser {
+        cursor: pointer;
+        border-style: dashed;
+        border-width: 2px;
+        text-align: center;
+        &:hover {
+            opacity: 0.8
+        }
+        .newusercircle {
+            width: 60px;
+            height: 60px;
+            border: 2px dashed indianred;
+            border-radius: 100%;
+            position: absolute;
+            left: 50%;
+            right: 50%;
+            top: 50%;
+            bottom: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            span {
+                font-size: 70px;
+                line-height: 42px;
+                color: indianred;
+            }
+        }
+        .newusertext {
+            font-size: 28px;
+            color: indianred;
+        }
+    }
+}

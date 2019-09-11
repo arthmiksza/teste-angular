@@ -1,0 +1,18 @@
+<div class="carduser p-3" *ngIf="data" (click)="editUser()">
+    <h4 class="name" title="{{fullName}}">{{fullName}}</h4>
+    <div class="userinfo">
+        <p class="sex" title="{{data.tx_sexo}}">{{data.tx_sexo}}</p>
+        <p class="location" title="{{location}}">{{location}}</p>
+        <p class="formation" title="{{data.tx_formacao}}">{{data.tx_formacao}}</p>
+        <p class="profession" title="{{data.tx_profissao}}">{{data.tx_profissao}}</p>
+    </div>
+    <div class="actions mt-3" *ngIf="showActions">
+        <button class="btn btn-danger" (click)="deleteUser($event)">Excluir</button>
+    </div>
+</div>
+<div class="carduser p-3 newuser" *ngIf="!data" (click)="newUser()">
+    <div class="newusercircle">
+        <span>+</span>
+    </div>
+    <span class="newusertext">Novo Usuário</span>
+</div>
